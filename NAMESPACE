@@ -3,5 +3,6 @@
 export(getMultipleReactionFormula)
 export(getProteinStucture)
 export(getSingleReactionFormula)
+export(hello)
 export(idmapping)
 export(splitAndCombine)
