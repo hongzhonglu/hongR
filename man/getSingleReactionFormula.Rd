@@ -19,3 +19,10 @@ one element
 \description{
 get single mapping result for one element
 }
+\examples{
+w <- 1:6
+v <- c('z','a','b','a','b', 'e')
+testData <- c('a','b','g')
+getSingleReactionFormula(w,v,testData)
+
+}

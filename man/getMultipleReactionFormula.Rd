@@ -2,12 +2,12 @@
 % Please edit documentation in R/getMutipleReactionFormula.R
 \name{getMultipleReactionFormula}
 \alias{getMultipleReactionFormula}
-\title{get multipple mapping results for one element}
+\title{get multiple mapping results for one element}
 \usage{
 getMultipleReactionFormula(description, reaction, ko)
 }
 \arguments{
-\item{description}{vector contains the description for each element from 'reaction_ko'}
+\item{description}{vector contains the description for each element from 'reaction'}
 
 \item{reaction}{vector contrains the element been mapped}
 
@@ -17,7 +17,7 @@ getMultipleReactionFormula(description, reaction, ko)
 one element, which contains several mapping results seperated by ";"
 }
 \description{
-get multipple mapping results for one element
+get multiple mapping results for one element
 }
 \examples{
 w <- 1:6
