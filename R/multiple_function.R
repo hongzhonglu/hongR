@@ -21,3 +21,40 @@ idmapping <- function(query, inputid, outputid, fmt){
   cont <- httr::content(r, type = "text")
   result <- readr::read_tsv(cont)
 }
+
+
+
+
+#' Title
+#' using the description1 in para1 to update the description2 in para2
+#' these parameters should not be factor level
+#' @param description1
+#' @param para1
+#' @param description2
+#' @param para2
+#'
+#' @return
+#' @export
+#'
+#' @examples
+
+AutoUpdate <- function(description1, para1, description2,  para2){
+
+  s1 <- list()
+  p <- vector()
+  description <- vector()
+  nn <- length(para2)
+  for (i in 1:nn){
+    s1[[i]] <- which(para1 %in% para2[i] ==TRUE)
+    p[i]<- s1[[i]][1]
+  }
+
+  for(i in 1:nn){
+    if(!is.na(p[i])){
+      description[i] <- description1[p[i]]
+    } else{
+      description[i] <- description2[i]
+    }
+  }
+  return(description)
+}

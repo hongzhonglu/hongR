@@ -2,7 +2,7 @@
 % Please edit documentation in R/hello.R
 \name{hello}
 \alias{hello}
-\title{Title}
+\title{function to test}
 \usage{
 hello()
 }
@@ -10,5 +10,8 @@ hello()
 a string
 }
 \description{
-Title
+function to test
+}
+\examples{
+hello()
 }
