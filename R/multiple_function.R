@@ -58,3 +58,29 @@ AutoUpdate <- function(description1, para1, description2,  para2){
   }
   return(description)
 }
+
+
+
+
+#' Title
+#' R package management
+#' print all installed R packages and its version
+#' print all installed R packages and its version
+#' print all installed R packages and its version
+#' @param output
+#'
+#' @return
+#' @export
+#'
+#' @examples
+#' print_R_package()
+print_R_package <- function(output="Installed_R_package.txt") {
+  .libPaths()
+  ss <- installed.packages()[, c("Package", "Version", "LibPath")]
+  ss1 <- as.data.frame(ss)
+  write.table(ss1, output, row.names = FALSE, sep = "\t")
+}
+
+
+
+

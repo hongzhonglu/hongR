@@ -31,3 +31,12 @@ getMultipleReactionFormula <- function(description, reaction, ko) {###descriptio
   return(result)
 }
 #devtools::document()
+
+
+
+
+
+
+
+
+
